@@ -8,5 +8,14 @@ mirPLOT_v03.py calls external scripts from "/scripts" in order to produce the di
 
 The "useful_scripts" directory, contains some scripts that might be useful for pre-processing miRNA data.
  
+ 
+ 
+
+The data for running the examples is available at;
+https://drive.google.com/open?id=0B1HX-0ECt0DgQkh5VEg4REE1dDA
+
+
+For mirPLOT help;
+    $ python mirPLOT_v03.py --help
 
 Please refer to (Ylla et al. 2016)
