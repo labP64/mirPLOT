@@ -1302,7 +1302,7 @@ options, remainder = getopt.getopt(sys.argv[1:], 'o:vh', [   							'output=',
 														 'gff3Stars=',
 														 'PrecsFasta=',
 														 'Flanking_bases=',
-														 'OnlyPngPlot',
+														 'OnlyPngPlot=',
 														 ])
 
 print 'ARGV	  :', sys.argv[1:]
@@ -1326,19 +1326,17 @@ You have differnt modes to run mirPLOT.py
 
    1.1 - Providing precursors fasta file and bam files directory
 
-	 $ python mirPLOT_v04.py --BamFilesDir Example_Files/ --PrecsFasta Example_Files/conserved+30.fa --output Figures_2  --Flanking_bases 11
+	 $ python mirPLOT_v04.py --BamFilesDir Example_Files/bams/ --PrecsFasta Example_Files/conserved+30.fa --output Figures_2  --Flanking_bases 11
 
    1.2 - Providing precursors fasta file, bam files directory and gff3 file with mature miRNA annotations
 
-	 $ python mirPLOT_v04.py --BamFilesDir Example_Files/ --PrecsFasta Example_Files/conserved+30.fa --output Figures_2  --gff3Matures Example_Files/Coordinates_matures_30.gff3 --Flanking_bases 11
+	 $ python mirPLOT_v04.py --BamFilesDir Example_Files/bams/ --PrecsFasta Example_Files/conserved+30.fa --output Figures_2  --gff3Matures Example_Files/Coordinates_matures_30.gff3 --Flanking_bases 11
 
    1.3 - Providing precursors fasta file, bam files directory and gff3 file with mature and star miRNA annotations
 	 
-	 $ python mirPLOT_v04_dev.py --BamFilesDir Example_Files/ --PrecsFasta Example_Files/conserved+30.fa --output Example_Files/  --gff3Matures Example_Files/Coordinates_matures_30.gff3  --gff3Stars Example_Files/Coordinates_stars_30.gff3 --Flanking_bases 11
+	 $ python mirPLOT_current.py --BamFilesDir Example_Files/bams/ --PrecsFasta Example_Files/conserved+30.fa --output Example_Files/  --gff3Matures Example_Files/Coordinates_matures_30.gff3  --gff3Stars Example_Files/Coordinates_stars_30.gff3 --Flanking_bases 11
 
 
- 2- With Bam files of shortRNA reads mapped against genome and  gff3 files
-	 $ python mirPLOT_v04.py --BamFilesDir  --Genome --output Figures_2  --gff3Matures  --gff3Stars --gff3Precs --Flanking_bases 11
 
 --BamFilesDir
 --PrecsFasta
@@ -1347,7 +1345,9 @@ You have differnt modes to run mirPLOT.py
 --gff3Matures
 --gff3Stars
 --OnlyPngPlot
---Flanking_bases\tNumber of flanking bases
+--Flanking_bases
+
+contact: guille.ylla@ibe.upf-csic.es
 
 \n"""
 		sys.exit()
