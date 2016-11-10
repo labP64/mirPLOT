@@ -1337,7 +1337,6 @@ You have differnt modes to run mirPLOT.py
 	 $ python mirPLOT_current.py --BamFilesDir Example_Files/bams/ --PrecsFasta Example_Files/conserved+30.fa --output Example_Files/  --gff3Matures Example_Files/Coordinates_matures_30.gff3  --gff3Stars Example_Files/Coordinates_stars_30.gff3 --Flanking_bases 11
 
 
-
 --BamFilesDir
 --PrecsFasta
 --output / -o
@@ -2115,6 +2114,7 @@ if  ( "gff3Matures" in globals() and  "gff3Stars" in globals() ): # Mature and s
 
 
 os.system("rm -rf *.fa.out")
+
 
 
 
